@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InvestigacionComplementaria5834163.MainPage"
+             Title="Investigación Complementaria">
+
+    <!--<Summary>
+  <Createdate>Jueves 23 de Mayo del 2024</Createdate>
+  <Comapy></Comapy>
+  <Lastmodificationdate>27 de Mayo</Lastmodificationdate>
+  <Lastmodificationdescription>Evento cliked en los buttons</Lastmodificationdescription>
+  <Lastmodifierautor>Emely Nájera</Lastmodifierautor>
+  </Summary>-->
+
+
+    <ScrollView>
+        <VerticalStackLayout
+    Padding="30"
+    Spacing="25">
+
+
+            <Label
+        Text="1.Realice un programa en (net maui) que solicite 4 números y luego invierta el orden de los números"/>
+            <Button
+        x:Name="Numeros"
+        Text="Ir al Ejercicio 1" 
+        Clicked="Numeros_Clicked"
+        BackgroundColor="CadetBlue"
+        WidthRequest="200"/>
+
+            <Label
+         Text="2.Construya un programa que dados los números A y B, escriba el resultado de la siguiente expresión (A+B)^2/2"/>
+            <Button
+         x:Name="NumAyB"
+         Text="Ir al Ejercicio 2" 
+         Clicked="NumAyB_Clicked"
+        BackgroundColor="CadetBlue"
+        WidthRequest="200"/>
+
+            <Label
+         Text="3.Construya un programa que dada las 5 calificaciones de un alumno a lo largo del semestre, muestre el promedio de sus calificaciones"/>
+            <Button
+         x:Name="promedio"
+         Text="Ir al Ejercicio 3" 
+         Clicked="promedio_Clicked" 
+        BackgroundColor="CadetBlue"
+        WidthRequest="200"/>
+
+            <Label
+         Text="4.Construya un programa que permita obtener el cuadrado y el cubo de un numero entero positivo"/>
+            <Button
+         x:Name="CuadradoCubo"
+         Text="Ir al Ejercicio 4" 
+         Clicked="CuadradoCubo_Clicked" 
+        BackgroundColor="CadetBlue"
+        WidthRequest="200"/>
+
+            <Label
+         Text="5.Construya un programa que dados la altura y la base de un rectángulo, calcule el perímetro y la superficie del mismo"/>
+            <Button
+         x:Name="AlturaBase"
+         Text="Ir al Ejercicio 5" 
+         Clicked="AlturaBase_Clicked" 
+        BackgroundColor="CadetBlue"
+        WidthRequest="200"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

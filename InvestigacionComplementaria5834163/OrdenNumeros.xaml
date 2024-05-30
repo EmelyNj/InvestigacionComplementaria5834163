@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InvestigacionComplementaria5834163.OrdenNumeros"
+             Title="Orden de los números">
+    <!--<Summary>
+   <Createdate>23 de Mayo del 2024</Createdate>
+   <Comapy></Comapy>
+   <Lastmodificationdate>27 de Mayo</Lastmodificationdate>
+   <Lastmodificationdescription> Placeholder de cada Entr, el Tittle de la pagina y 
+    agregar la etiqueta ScrollView</Lastmodificationdescription>
+   <Lastmodifierautor>Emely Nájera</Lastmodifierautor>
+   </Summary>-->
+
+    <ScrollView>
+    <VerticalStackLayout Padding="8">
+        <Image Source="numeros.png"
+           HeightRequest="200"
+           WidthRequest="200"></Image>
+
+        <Label 
+        Text="Solicitar 4 números e invertir su orden"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        Padding="9"/>
+
+        <Entry x:Name="num1" Placeholder="Ingrese el primer número"
+           WidthRequest="300"></Entry>
+
+        <Entry x:Name="num2" Placeholder="Ingrese el segundo número"
+            WidthRequest="300"></Entry>
+
+        <Entry x:Name="num3" Placeholder="Ingrese el tercer número"
+            WidthRequest="300"></Entry>
+
+        <Entry x:Name="num4" Placeholder="Ingrese el cuarto número"
+            WidthRequest="300"></Entry>
+
+
+        <Entry x:Name="resultado"  WidthRequest="300"></Entry>
+
+        <Button Text="Ordenar" x:Name="Ordenar" Clicked="Ordenar_Clicked"  WidthRequest="300"
+            BackgroundColor="LightSlateGrey"
+            ></Button>
+
+        <Button Text="Invertir Orden" x:Name="Invertir" Clicked="Invertir_Clicked"  WidthRequest="300"
+            BackgroundColor="LightSlateGrey"></Button>
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
